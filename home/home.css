@@ -1,11 +1,17 @@
+
 body{
     margin: 0;
     width: 100vw;
     height: 100vh;
-    font-family: 'Nunito sans' sans-serif;
+    font-family:'Nunito Sans', sans-serif;
     background-color: #fafcff;
+    overflow: hidden;
 }
-
+.wrapper{
+    width: 100%;
+    padding: 0 auto;
+    margin: 0 auto;
+}
 .navbar {
     background-color: white;
     padding: 15px;
@@ -14,11 +20,214 @@ body{
     border-radius: 25px;
 }
 .navbar-column.left{
-    padding: 0 150px;
+    padding: 0 100px;
 }
 .title.left {
     color: #6379f4;
 }
 .nav-user-info{
     margin-left: 15px;
+    float: right;
+}
+.navbar-column.right{
+    float: right;
+    margin-top: -60px;
+    padding-right: 10%;
+}
+.fw-bold{
+    margin-bottom: -15px;
+}
+.icon.notification{
+    margin-left: 120%;
+}
+.wraper{
+    padding: 50px 0;
+}
+/* ---------------------------sidebar start--------------------------- */
+.sidebar-menu{
+    width: 30%;
+    height: 65vh;
+    padding: 15px;
+    margin-left: 5%;
+}
+.box-sidebar{
+    height: 70vh;
+    width: 60%;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+.box-sidebar img{
+    align-items: center;
+    margin: 9vh 3vw;
+}
+.box-sidebar h4{
+    color: #6379f4;
+    margin: -14vh 7vw;
+}
+.box-sidebar .arrow{
+    margin: 19vh 3vw;
+}
+.box-sidebar .subtitle{
+    margin: -24vh 7vw;
+    color: #aaa;
+}
+.box-sidebar .plus{
+    margin: 28vh 3vw;
+}
+.box-sidebar .top-up{
+    margin: -33vh 7vw;
+    color: #aaa;
+}
+.box-sidebar .user{
+    margin: 37vh 3vw;
+}
+.box-sidebar .profile{
+    margin: -41vh 7vw;
+    color: #aaa;
+}
+.box-sidebar .bottom{
+    margin: 59vh 3vw;
+}
+.box-sidebar .logout{
+    margin: -64vh 7vw;
+    color: #aaa;
+}
+/*---------------------------- sidebar end ----------------------------*/
+
+
+/* -------------------------balance start------------------------------------- */
+.main-content{
+    width: 60%;
+    height: 60vh;
+    margin: -67vh 12%;
+    padding-right: 25px;
+    float: right;
+}
+.main-balance{
+    padding: 15px;
+    width: 65vw;
+    height: 30%;
+    background: #6379f4;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+.box-balance h5{
+    margin: -20vh 2vw;
+    color: #e0e0e0;
+}
+.box-balance h2{
+    margin: 23vh 2vw;
+    color: #fff;
+}
+.box-balance p{
+    margin: -21vh 2vw;
+    color: #e0e0e0;
+    font-size: 14px;
+}
+.box-balance .grup-over{
+    margin: -3vh 58vw;
+}
+.box-balance .grup-bottom{
+    margin: 4vh 58vw;
+}
+
+/* ---------------------------balance end --------------------------------------*/
+
+
+/*------------------------------- transaction start------------------------- */
+.main-transaction{
+    height: 70%;
+    width: 50%;
+    padding: 0px 41px;
+    margin: -22% 20%;
+    float: right;
+}
+.main-transaction-wrapper{
+    height: 45vh;
+    width: 30vw;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+
+.box-charts .in-left{
+    padding: 20px 25px;
+}
+.box-charts p{
+    padding-left: 2vw;
+    margin-top: -4vh;
+    font-size: 13px;
+}
+.box-charts h3{
+    font-size: 13px;
+    padding-left: 2vw;
+    margin-top: -2vh;
+}
+.box-charts .in-right{
+    float: right;
+    width:auto;
+    margin: -12vh 4vw;
+}
+.box-charts .p-right{
+    float: right;
+    font-size: 13px;
+    margin: -8vh 3vw;
+}
+.box-charts .h-right{
+    float: right;
+    font-size: 13px;
+    margin: -5vh 1vw;
+}
+.box-charts .graphic{
+    margin-top: -6px;
+}
+
+/*--------------------------------transaction end------------------------- */
+
+/* ---------------------------history start------------------------------------------ */
+.main-transaction-history{
+    height: 70vh;
+    width: 50%;
+    margin: -23% -110px;
+    float: right;
+}
+.main-history-wrapper{
+    height: 45vh;
+    width: 34vw;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+.box-history p{
+    font-size: 13px;
+    padding: 4% 6%;
+}
+.box-history .first{
+    padding: 0 10%;
+}
+.box-history .align-right{
+    color: #6379f4;
+    float: right;
+    margin: -10vh 0;
+}
+.first-user{
+    float: right;
+    margin-left: 15px;
+}
+.first-name h5{
+    float: right;
+    font-size: 13px;
+    margin: -9vh 22vw;
+}
+.first-user p{
+    float: right;
+    margin: -7vh 19vw;
+    color: #e0e0e0;
+}
+.first-user h3{
+    color: #00ff00;
+    font-size: 13px;
+    float: right;
+    margin: -8vh 1vw;
 }
