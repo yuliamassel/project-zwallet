@@ -5,98 +5,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="home.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Home Page</title>
   </head>
   <body>
-      <!--------------------------------nav start--------------------------------->
+    <!--------------------------------nav start--------------------------------->
     <nav class="navbar shadow">
-        <div class="navbar-column left">
-            <h1 class="title left">Zwallet</h1>
+      <div class="navbar-column left">
+        <h1 class="title left">Zwallet</h1>
+      </div>
+      <div class="navbar-column right">
+        <img
+          src="img/Rectangle 25.svg"
+          alt="Robert Chandler"
+          width="52"
+          height="52"
+        />
+        <div class="nav-user-info">
+          <div class="fw-bold">
+            Robert Chandler
+            <img class="icon notification" src="img/bell.svg" alt="" />
+          </div>
+          <span> +62 8139 3877 7946 </span>
         </div>
-        <div class="navbar-column right">
-            <img src="img/Rectangle 25.svg" alt="Robert Chandler" width="52" height="52">
-            <div class="nav-user-info">
-                <div class="fw-bold">
-                    Robert Chandler
-                    <img class="icon notification" src="img/bell.svg" alt="">
-                </div>
-                <span>
-                    +62 8139 3877 7946
-                </span>
-            </div>
-        </div>
+      </div>
     </nav>
     <!---------------------------------------nav end---------------------------------->
 
-
-
     <!-----------------------------------sidebar start-------------------------------->
-    <section class="wrapper">
-        <aside class="sidebar-menu">
-            <div class="box-sidebar"> 
-                <img src="img/grid.svg" alt="grid" width="28" height="28">
-                <h4>Dashboard</h4>       
-                <img class="arrow" src="img/arrow-up.svg" alt="arrow" width="28" height="28">
-                <h4 class="subtitle">Transfer</h4>
-                <img class="plus" src="img/plus.svg" alt="plus" width="28" height="28">
-                <h4 class="top-up">TopUp</h4>
-                <img class="user" src="img/user.svg" alt="user" width="28" height="28">
-                <h4 class="profile">Profile</h4>
-                <img class="bottom" src="img/log-out.svg" alt="log-out" width="28" height="28">
-                <h4 class="logout">Logout</h4>
-            </div>
-        </aside>
-        <div class="main-content">
-            <div class="main-balance"></div>
-                <div class="box-balance">
-                    <h5>Balance</h5>
-                    <h2>Rp 120.000</h2>
-                    <p>+62 8139 3877 7946</p>
-                    <img class="grup-bottom" src="img/Group 34.svg" alt="button topup" width="100" height="50">
-                    <img class="grup-over" src="img/Group 33.svg" alt="button transfer" width="100" height="50">
-                </div>
-            </div>
-            <!--------------------------sidebar end------------------------------------------------>
+    <div class="container">
+      <aside class="sidebar-menu">
+        <div class="box-sidebar">
+          <img class="grid" src="img/grid.svg" alt="grid" width="28" height="28" />
+          <h4>Dashboard</h4>
+          <img
+            class="arrow"
+            src="img/arrow-up.svg"
+            alt="arrow"
+            width="28"
+            height="28"
+          />
+          <h4 class="subtitle">Transfer</h4>
+          <img
+            class="plus"
+            src="img/plus.svg"
+            alt="plus"
+            width="28"
+            height="28"
+          />
+          <h4 class="top-up">TopUp</h4>
+          <img
+            class="user"
+            src="img/user.svg"
+            alt="user"
+            width="28"
+            height="28"
+          />
+          <h4 class="profile">Profile</h4>
+          <img
+            class="bottom"
+            src="img/log-out.svg"
+            alt="log-out"
+            width="28"
+            height="28"
+          />
+          <h4 class="logout">Logout</h4>
+        </div>
+      </aside>
+      <div class="main-content">
+        <div class="main-balance">
+          <div class="box-balance">
+            <h5>Balance</h5>
+            <h2>Rp 120.000</h2>
+            <p>+62 8139 3877 7946</p>
+            <img
+              class="grup-bottom"
+              src="img/Group 34.svg"
+              alt="button topup"
+              width="100"
+              height="50"
+            />
+            <img
+              class="grup-over"
+              src="img/Group 33.svg"
+              alt="button transfer"
+              width="100"
+              height="50"
+            />
+          </div>
+        </div>
+      </div>
+      <!--------------------------sidebar end------------------------------------------------>
 
-            <!------------------------------transaction start-------------------------------------->
-            <div class="main-transaction">
-                <div class="main-transaction-wrapper">
-                    <div class="box-charts">
-                        <img class="in-left" src="img/arrow-green.svg" alt="in">
-                        <p>income</p>
-                        <h3>Rp2.120.000</h3>
-                    </div>
-                    <div class="box-charts">
-                        <img class="in-right" src="img/arrow-red.svg" alt="">
-                        <p class="p-right">expanse</p>
-                        <h3 class="h-right">Rp1.560.000</h3>
-                        <img class="graphic" src="img/graphic.svg" alt="graphic" width="400" height="170">
-                    </div>
-                </div>
-            </div>
-            <!-----------------------------------transaction end-------------------------------->
+      <!------------------------------transaction start-------------------------------------->
+      <div class="main-transaction">
+        <div class="main-transaction-wrapper">
+          <div class="box-charts">
+            <img class="in-left" src="img/arrow-green.svg" alt="in" />
+            <p>income</p>
+            <h3>Rp2.120.000</h3>
+            <img class="in-right" src="img/arrow-red.svg" alt="" />
+            <p class="p-right">expanse</p>
+            <h3 class="h-right">Rp1.560.000</h3>
+            <img
+              class="graphic"
+              src="img/graphic.svg"
+              alt="graphic"
+              width="400"
+              height="170"
+            />
+          </div>
+        </div>
+      </div>
+      <!-----------------------------------transaction end-------------------------------->
 
-            <!---------------------------------history start------------------------------------->
-            <div class="main-transaction-history">
-                <div class="main-history-wrapper">
-                    <div class="box-history">
-                        <p>Transaction History</p>
-                        <p class="align-right">See All</p>
-                        <img class="first" src="img/gambar1.svg" alt="" width="50" height="50">
-                        <div class="first-user">
-                            <div class="first-name">
-                                <h5>Samuel Suhi</h5>
-                            </div>
-                        <p>Tranfer</p>
-                        <h3>+Rp50.000</h3>
-                    </div>
-                        <img src="img/logo-N.svg" alt="Netflix" width="50" height="50">
-                    </div>
-                </div>
-            </div>
-    </section>
-    </body>
+      <!---------------------------------history start------------------------------------->
+      <div class="main-transaction-history">
+        <div class="main-history-wrapper">
+          <div class="box-history">
+            <h5>Transaction History</h5>
+            <p>See All</p>
+          </div>
+          <div class="first-user">
+            <img src="img/gambar1.svg" alt="" width="50" height="50" />
+            <h5>Samuel Suhi</h5>
+            <p>Tranfer</p>
+            <h3>+Rp50.000</h3>
+          </div>
+          <div class="second-user">
+            <img src="img/logo-N.svg" alt="" width="50" height="50" />
+            <h5>Netflix</h5>
+            <p>Subscription</p>
+            <h3>-Rp149.000</h3>
+          </div>
+          <div class="third-user">
+            <img src="img/gambar7.svg" alt="" width="50" height="50" />
+            <h5>Christine</h5>
+            <p>Tranfer</p>
+            <h3>+Rp150.000</h3>
+          </div>
+          <div class="fourth-user">
+            <img src="img/logo-A.svg" alt="" width="50" height="50" />
+            <h5>Adobe Inc.</h5>
+            <p>Subcription</p>
+            <h3>-Rp249.000</h3>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>2020 Zwallet. All right reserved</p>
+        <span>+62 5637 8882 9901</span>
+        <p class="contact">contact@zwallet.com</p>
+    </footer>
+    </div>
+  </body>
 </html>

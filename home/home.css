@@ -7,10 +7,12 @@ body{
     background-color: #fafcff;
     overflow: hidden;
 }
-.wrapper{
-    width: 100%;
+.container{
+    width: 100vw;
+    height: 100vh;
     padding: 0 auto;
     margin: 0 auto;
+    display: flex;
 }
 .navbar {
     background-color: white;
@@ -45,21 +47,22 @@ body{
 }
 /* ---------------------------sidebar start--------------------------- */
 .sidebar-menu{
-    width: 30%;
-    height: 65vh;
+    width: 30vw;
+    height: 70vh;
     padding: 15px;
-    margin-left: 5%;
+    margin: 0;
 }
 .box-sidebar{
     height: 70vh;
-    width: 60%;
+    width: 20vw;
     background-color: white;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
 }
-.box-sidebar img{
+.box-sidebar .grid{
     align-items: center;
     margin: 9vh 3vw;
+    border-left: 4px solid #6379f4;
 }
 .box-sidebar h4{
     color: #6379f4;
@@ -98,19 +101,24 @@ body{
 
 /* -------------------------balance start------------------------------------- */
 .main-content{
-    width: 60%;
-    height: 60vh;
-    margin: -67vh 12%;
-    padding-right: 25px;
-    float: right;
+    width: 70vw;
+    height: 20vh;
+    margin: 3vh 23vw;
+    padding-right: 0px;
+    position: absolute;
+    display: flex;
 }
 .main-balance{
-    padding: 15px;
-    width: 65vw;
-    height: 30%;
+    padding: 10vh 10vw;
+    width: 52vw;
+    height: 0vh;
     background: #6379f4;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
+}
+.box-balance{
+    align-items: center;
+    margin: 12vh -8vw;
 }
 .box-balance h5{
     margin: -20vh 2vw;
@@ -126,10 +134,10 @@ body{
     font-size: 14px;
 }
 .box-balance .grup-over{
-    margin: -3vh 58vw;
+    margin: -3vh 55vw;
 }
 .box-balance .grup-bottom{
-    margin: 4vh 58vw;
+    margin: 4vh 55vw;
 }
 
 /* ---------------------------balance end --------------------------------------*/
@@ -137,15 +145,14 @@ body{
 
 /*------------------------------- transaction start------------------------- */
 .main-transaction{
-    height: 70%;
-    width: 50%;
-    padding: 0px 41px;
-    margin: -22% 20%;
-    float: right;
+    width: 35vw;
+    margin: 13vw 45vh;
+    display: flex;
+    position: absolute;
 }
 .main-transaction-wrapper{
-    height: 45vh;
-    width: 30vw;
+    height: 47vh;
+    width: 35vw;
     background-color: white;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
@@ -180,54 +187,193 @@ body{
     margin: -5vh 1vw;
 }
 .box-charts .graphic{
-    margin-top: -6px;
+    margin-left: 3vw;
 }
 
 /*--------------------------------transaction end------------------------- */
 
 /* ---------------------------history start------------------------------------------ */
 .main-transaction-history{
-    height: 70vh;
-    width: 50%;
-    margin: -23% -110px;
-    float: right;
+    width: 35vw;
+    margin: 13vw 115vh;
+    display: flex;
+    position: absolute;
 }
 .main-history-wrapper{
-    height: 45vh;
-    width: 34vw;
+    height: 47vh;
+    width: 35vw;
     background-color: white;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
+    display: flex;
 }
-.box-history p{
+.box-history h5{
     font-size: 13px;
-    padding: 4% 6%;
+    position: absolute;
+    padding: 15px;
 }
 .box-history .first{
     padding: 0 10%;
 }
-.box-history .align-right{
+.box-history p{
     color: #6379f4;
-    float: right;
-    margin: -10vh 0;
+    position: absolute;
+    margin-left: 29vw;
+    padding-top: 3vh;
+    font-style: bold;
 }
 .first-user{
-    float: right;
-    margin-left: 15px;
+    display: flex;
+    height: 40%;
+    width: 100%;
 }
-.first-name h5{
-    float: right;
-    font-size: 13px;
-    margin: -9vh 22vw;
+.first-user img{
+    margin: 10vh 2vw;
+}
+.first-user h5{
+    position: absolute;
+    margin: 11vh 7vw;
 }
 .first-user p{
-    float: right;
-    margin: -7vh 19vw;
-    color: #e0e0e0;
+    margin: 15vh -1vw;
+    color: #aaa;
+    font-size: 13px;
 }
 .first-user h3{
     color: #00ff00;
     font-size: 13px;
-    float: right;
-    margin: -8vh 1vw;
+    margin: 11vh 18vw;
 }
+.second-user{
+    display: flex;
+    justify-content: space-between;
+}
+.second-user img{
+    position: absolute;
+    margin-left: -33vw;
+    padding-top: 19vh;
+}
+.second-user h5{
+    margin-left: -28vw;
+    padding-top: 17vh;
+}
+.second-user p{
+    color: #aaa;
+    font-size: 13px;
+    margin-left: -18vw;
+    padding-top: 22vh;
+}
+.second-user h3{
+    color: #ff5b37;
+    font-size: 13px;
+    margin-top: 20vh;
+    padding-right: 2vw;
+}
+.third-user{
+    display: flex;
+    justify-content: space-between;
+}
+.third-user img{
+    position: absolute;
+    margin-left: -33vw;
+    padding-top: 28vh;
+}
+.third-user h5{
+    margin-left: -28vw;
+    padding-top: 25vh;
+} 
+.third-user p{
+    color: #aaa;
+    font-size: 13px;
+    margin-left: -21vw;
+    padding-top: 31vh;
+}
+.third-user h3{
+    color: #00ff00;
+    font-size: 13px;
+    margin-top: 30vh;
+    padding-right: 2vw;
+}
+.fourth-user{
+    display: flex;
+    justify-content: space-between;
+}
+.fourth-user img{
+    position: absolute;
+    margin-left: -33vw;
+    padding-top: 37vh;
+}
+.fourth-user h5{
+    margin-left: -28vw;
+    padding-top: 34vh;
+} 
+.fourth-user p{
+    color: #aaa;
+    font-size: 13px;
+    margin-left: -20vw;
+    padding-top: 39vh;
+}
+.fourth-user h3{
+    color: #ff5b37;
+    font-size: 13px;
+    margin-top: 40vh;
+    padding-right: 2vw;
+}
+
+/* ---------------------------footer start-------------------- */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background: #6379f4;
+    height: -10%;
+    width: 100%;
+    position: absolute;
+    margin-top: 77vh;
+}
+footer p{
+    margin-left: 3vw;
+    color: white;
+}
+footer span{
+    margin-left: 35vw;
+    color: white;
+    margin-top: 3vh;
+}
+footer .contact{
+    margin-right: 5vw;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
