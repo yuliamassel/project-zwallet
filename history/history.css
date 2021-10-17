@@ -1,0 +1,299 @@
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family:'Nunito Sans', sans-serif;
+    background-color: #fafcff;
+    overflow: hidden;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    padding: 0 auto;
+    margin: 0 auto;
+    display: flex;
+}
+.navbar {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    padding: 15px;
+    padding-right: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+.navbar-column.left{
+    padding: 0 100px;
+}
+.title.left {
+    color: #6379f4;
+}
+.nav-user-info{
+    margin-left: 15px;
+    float: right;
+}
+.navbar-column.right{
+    float: right;
+    margin-top: -60px;
+    padding-right: 10%;
+}
+.fw-bold{
+    margin-bottom: -15px;
+}
+.icon.notification{
+    margin-left: 120%;
+}
+.wraper{
+    padding: 50px 0;
+}
+/* ---------------------------sidebar start--------------------------- */
+.sidebar-menu{
+    position: absolute;
+    width: 30vw;
+    height: 70vh;
+    padding: 25px;
+    margin: 0;
+}
+.box-sidebar{
+    height: 70vh;
+    width: 20vw;
+    margin-top: 15vh;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+.box-sidebar .grid{
+    align-items: center;
+    margin: 9vh 3vw;
+    border-left: 5px solid #6379f4;
+}
+.box-sidebar h4{
+    color: #6379f4;
+    margin: -14vh 7vw;
+}
+.box-sidebar .arrow{
+    margin: 19vh 3vw;
+}
+.box-sidebar .subtitle{
+    margin: -24vh 7vw;
+    color: #aaa;
+}
+.box-sidebar .plus{
+    margin: 28vh 3vw;
+}
+.box-sidebar .top-up{
+    margin: -33vh 7vw;
+    color: #aaa;
+}
+.box-sidebar .user{
+    margin: 37vh 3vw;
+}
+.box-sidebar .profile{
+    margin: -41vh 7vw;
+    color: #aaa;
+}
+.box-sidebar .bottom{
+    margin: 59vh 3vw;
+}
+.box-sidebar .logout{
+    margin: -64vh 7vw;
+    color: #aaa;
+}
+/*---------------------------- sidebar end ----------------------------*/
+
+
+/* ---------------------------history start------------------------------------------ */
+.main-transaction-history{
+    width: 35vw;
+    margin: 13vw 115vh;
+    display: flex;
+    position: absolute;
+}
+.main-history-wrapper{
+    height: 70vh;
+    width: 65vw;
+    margin: -6vh -35vw;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    display: flex;
+}
+.box-history h4{
+    /* font-size: 13px; */
+    position: absolute;
+    padding: 15px;
+}
+.box-history .first{
+    padding: 0 10%;
+}
+.box-history p{
+    color: #aaa;
+    position: absolute;
+    font-size: 13px;
+    padding-top: 8vh;
+    margin-left: 2vw;
+    font-style: bold;
+}
+.first-user{
+    display: flex;
+    height: 40%;
+    width: 100%;
+}
+.first-user img{
+    margin: 15vh 2vw;
+}
+.first-user h5{
+    position: absolute;
+    margin: 16vh 7vw;
+}
+.first-user p{
+    margin: 20vh -1vw;
+    color: #aaa;
+    font-size: 13px;
+}
+.first-user h3{
+    color: #00ff00;
+    font-size: 13px;
+    margin: 16vh 48vw;
+}
+.second-user{
+    display: flex;
+    justify-content: space-between;
+}
+.second-user img{
+    position: absolute;
+    margin-left: -63vw;
+    padding-top: 25vh;
+}
+.second-user h5{
+    margin-left: -58vw;
+    padding-top: 22vh;
+}
+.second-user p{
+    color: #aaa;
+    font-size: 13px;
+    margin-left: -48vw;
+    padding-top: 28vh;
+}
+.second-user h3{
+    color: #ff5b37;
+    font-size: 13px;
+    margin-top: 27vh;
+    padding-right: 2vw;
+}
+.mid-text{
+    position: absolute;
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 38vh;
+    padding-left: 2vw;
+}
+.third-user{
+    display: flex;
+    justify-content: space-between;
+}
+.third-user img{
+    position: absolute;
+    margin-left: -63vw;
+    padding-top: 45vh;
+}
+.third-user h5{
+    margin-left: -58vw;
+    padding-top: 42vh;
+} 
+.third-user p{
+    color: #aaa;
+    font-size: 13px;
+    margin-left: -50vw;
+    padding-top: 48vh;
+}
+.third-user h3{
+    color: #00ff00;
+    font-size: 13px;
+    margin-top: 47vh;
+    padding-right: 2vw;
+}
+.fourth-user{
+    display: flex;
+    justify-content: space-between;
+}
+.fourth-user img{
+    position: absolute;
+    margin-left: -63vw;
+    padding-top: 55vh;
+}
+.fourth-user h5{
+    margin-left: -58vw;
+    padding-top: 52vh;
+} 
+.fourth-user p{
+    color: #aaa;
+    font-size: 13px;
+    margin-left: -50vw;
+    padding-top: 58vh;
+}
+.fourth-user h3{
+    color: #ff5b37;
+    font-size: 13px;
+    margin-top: 56vh;
+    padding-right: 2vw;
+}
+
+/* ---------------------------footer start-------------------- */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background: #6379f4;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    margin-top: 92vh;
+}
+footer p{
+    margin-left: 3vw;
+    color: white;
+}
+footer span{
+    margin-left: 35vw;
+    color: white;
+    margin-top: 3vh;
+}
+footer .contact{
+    margin-right: 5vw;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
