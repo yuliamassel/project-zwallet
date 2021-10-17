@@ -1,0 +1,275 @@
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family:'Nunito Sans', sans-serif;
+    background-color: #fafcff;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    padding: 15px;
+    padding-right: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+.navbar-column.left{
+    padding: 0 100px;
+}
+.title.left {
+    color: #6379f4;
+}
+.nav-user-info{
+    margin-left: 15px;
+    float: right;
+}
+.navbar-column.right{
+    float: right;
+    margin-top: -60px;
+    padding-right: 10%;
+}
+.fw-bold{
+    margin-bottom: -15px;
+}
+.icon.notification{
+    margin-left: 120%;
+}
+.wraper{
+    padding: 50px 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* ---------------------------sidebar start--------------------------- */
+/* .sidebar-menu{
+    position: absolute;
+    width: 30vw;
+    height: 70vh;
+    
+    margin: 0;
+} */
+.sidebar-menu{
+    width: 20%;
+    margin: 18px -4vw;
+}
+.box-sidebar{
+    height: 70vh;
+    margin: 0vh 10vw;
+    width: 20vw;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+}
+
+.box-sidebar .grid{
+    align-items: center;
+    margin: 9vh 3vw;
+    color: #aaa;
+}
+.box-sidebar h4{
+    color: #aaa;
+    margin: -14vh 7vw;
+}
+.box-sidebar .arrow{
+    margin: 19vh 3vw;
+    border-left: 5px solid #6379f4;
+}
+.box-sidebar .subtitle{
+    color: #6379f4;
+    margin: -24vh 7vw;
+    
+}
+.box-sidebar .plus{
+    margin: 28vh 3vw;
+}
+.box-sidebar .top-up{
+    margin: -33vh 7vw;
+    color: #aaa;
+}
+.box-sidebar .user{
+    margin: 37vh 3vw;
+}
+.box-sidebar .profile{
+    margin: -41vh 7vw;
+    color: #aaa;
+}
+.box-sidebar .bottom{
+    margin: 59vh 3vw;
+}
+.box-sidebar .logout{
+    margin: -64vh 7vw;
+    color: #aaa;
+}
+/*---------------------------- sidebar end ----------------------------*/
+
+
+/* ---------------------------history start------------------------------------------ */
+
+.main-transaction-history{
+    width: 80vh;
+    height: 70vh;
+    position: absolute;
+    margin: 9vw 55vh;
+    padding-right: 20vw;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.box-history input{
+    box-sizing: border-box;
+    width: 50vw;
+    height: 7vh;
+    margin: -1vw 3vh;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background: #cacfd2;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+.box-history h4{
+    margin: 2vw 4vh;
+}
+.first-user{
+    width: 50vw;
+    height: 11vh;
+    position: absolute;
+    margin: 18vh 3vw;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.first-user img{
+    margin: 10px 10px;
+}
+.first-user h6{
+    margin: -5vw 10vh;
+}
+.first-user span{
+    position: absolute;
+    margin: 6vw 10vh;
+    font-size: 13px;
+    color: #aaa;
+}
+.second-user{
+    width: 50vw;
+    height: 11vh;
+    position: absolute;
+    margin: 31vh 3vw;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.second-user img{
+    margin: 10px 10px;
+}
+.second-user h6{
+    margin: -5vw 10vh;
+}
+.second-user span{
+    position: absolute;
+    margin: 6vw 10vh;
+    font-size: 13px;
+    color: #aaa;
+}
+.third-user{
+    width: 50vw;
+    height: 11vh;
+    position: absolute;
+    margin: 44vh 3vw;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.third-user img{
+    margin: 10px 10px;
+}
+.third-user h6{
+    margin: -5vw 10vh;
+}
+.third-user span{
+    position: absolute;
+    margin: 6vw 10vh;
+    font-size: 13px;
+    color: #aaa;
+}
+.fourth-user{
+    width: 50vw;
+    height: 11vh;
+    position: absolute;
+    margin: 57vh 3vw;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.fourth-user img{
+    margin: 10px 10px;
+}
+.fourth-user h6{
+    margin: -10vh 5vw;
+}
+.fourth-user span{
+    position: absolute;
+    margin: 6vw 10vh;
+    font-size: 13px;
+    color: #aaa;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+    background: #6379f4;
+    margin-top: 2vh;
+}
+#footer p{
+    color: white;
+    margin-left: 3vw;
+}
+
+#footer span{
+    margin-left: 35vw;
+    color: white;
+    margin-top: 3vh;
+}
+#footer .contact{
+    margin-right: 5vw;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
