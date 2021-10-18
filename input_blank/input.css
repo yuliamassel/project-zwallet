@@ -48,7 +48,7 @@ body{
     display: flex;
     flex-wrap: wrap;
 }
-/* ---------------------------------navbar end----------------------- */
+/* ----------------------------navbar end--------------------------------- */
 
 @keyframes sideLeft{
     0%,100%{
@@ -200,21 +200,6 @@ body{
     display: flex;
     flex-direction: column;
 }
-.box-history input{
-    box-sizing: border-box;
-    width: 50vw;
-    height: 7vh;
-    margin: -1vw 3vh;
-    padding: 10px 30px;
-    border: none;
-    outline: none;
-    background: #cacfd2;
-    border-radius: 20px;
-    font-family: sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    transition: 0.2s ease;
-}
 .box-history h4{
     margin: 2vw 4vh;
 }
@@ -222,19 +207,21 @@ body{
     width: 50vw;
     height: 11vh;
     position: absolute;
-    margin: 18vh 3vw;
+    margin: 10vh 3vw;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+    animation: sideLeft 3s ease-in-out infinite;
 }
 .first-user:hover{
-    transform: translateX(10px);
-    box-shadow: 0 5px 5px #aaa ;
+    transform: translateX(2px);
+    box-shadow: 0 5px 10px  #d0d3d4 ;
     opacity: 1;
+    animation: sideLeft 3s ease-in-out infinite;
 }
 .first-user img{
     margin: 10px 10px;
 }
-.first-user h6{
+.first-user h5{
     margin: -5vw 10vh;
 }
 .first-user span{
@@ -243,80 +230,80 @@ body{
     font-size: 13px;
     color: #aaa;
 }
-.second-user{
-    width: 50vw;
-    height: 11vh;
-    position: absolute;
-    margin: 31vh 3vw;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-}
-.second-user:hover{
-    transform: translateX(10px);
-    box-shadow: 0 5px 5px #aaa ;
-    opacity: 1;
-}
-.second-user img{
-    margin: 10px 10px;
-}
-.second-user h6{
-    margin: -5vw 10vh;
-}
-.second-user span{
-    position: absolute;
-    margin: 6vw 10vh;
-    font-size: 13px;
+.text-desc{
+    font-size: 16px;
+    margin: 10vh 5vw;
     color: #aaa;
 }
-.third-user{
+/* .input-nominal{
+    box-sizing: border-box;
     width: 50vw;
-    height: 11vh;
+    height: 7vh;
+    margin: -1vw 3vh;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+} */
+.input-nominal input{
     position: absolute;
-    margin: 44vh 3vw;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
+    width: 50%;
+    border: none;
+    outline: none;
+    margin: -10vh 25vw;
+    border-left: 2px solid#e74c3c;
+    font-size: 42px;
+    color: #d0d3d4;
+    font-weight: bold;
+    transition: 0.2s ease;
 }
-.third-user:hover{
-    transform: translateX(10px);
-    box-shadow: 0 5px 5px #aaa ;
-    opacity: 1;
+.info-nominal{
+    height: 10vh;
+    width: 100%;
+    font-weight: bold;
+    margin: 1vw 44vh;
 }
-.third-user img{
-    margin: 10px 10px;
+.notes{
+    margin: -5vh 22vw;
 }
-.third-user h6{
-    margin: -5vw 10vh;
-}
-.third-user span{
-    position: absolute;
-    margin: 6vw 10vh;
+.notes input{
+    display: block;
+    box-sizing: border-box;
+    padding: 7px 5px;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-bottom: 1.5px solid rgba(169, 169, 169, 0.6);
     font-size: 13px;
-    color: #aaa;
+    font-family: sans-serif;
+    font-weight: 400;
+    transition: 0.2s ease;
 }
-.fourth-user{
-    width: 50vw;
-    height: 11vh;
+.notes img{
     position: absolute;
-    margin: 57vh 3vw;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: -5vh;
+}
+.LoginBtn{
+    position: absolute;
+    margin: 51% 66%;
+}
+.LoginBtn button{
+    border: none;
+    height: 6vh;
+    width: 15vw;
     border-radius: 10px;
+    margin: 0.5em 0;
+    transform: translate(-1%);
+    cursor: pointer;
+    color: #fff;
+    transition: all .4s;
 }
-.fourth-user:hover{
-    transform: translateX(10px);
-    box-shadow: 0 5px 5px #aaa ;
-    opacity: 1;
-}
-.fourth-user img{
-    margin: 10px 10px;
-}
-.fourth-user h6{
-    margin: -10vh 5vw;
-}
-.fourth-user span{
-    position: absolute;
-    margin: 6vw 10vh;
-    font-size: 13px;
-    color: #aaa;
+.LoginBtn button:hover{
+    background: #6495ed;
+    transition: 0.2s ease;
 }
 #footer{
     display: flex;
