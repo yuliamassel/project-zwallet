@@ -76,7 +76,7 @@ body{
     flex-direction: column;
     align-items: center;
     height: 70vh;
-    width: 20vw;
+    width: 18vw;
     background-color: white;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
@@ -84,18 +84,17 @@ body{
 .box-sidebar .grid{
     display: flex;
     flex-direction: row;
-    /* height: 10vh; */
-    width: 15vw;
-    padding-top: 15px;
-    margin: 15px 0;
+    width: 100%;
+    justify-content: center;
+    /* padding-top: 15px; */
+    margin: 5vh -2px;
     background-color: white;
     /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); */
-    border-radius: 10px;  
+    /* border-radius: 7px;   */
 }
 .box-sidebar .grid:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 5px 5px #aaa ;
-    opacity: 1;
+    border-left: 2px solid#aaa;
+    transition: 0.2s ease;
 }
 .grid h4{
     color: #aaa;
@@ -104,20 +103,24 @@ body{
 .box-sidebar .arrow{
     display: flex;
     flex-direction: row;
+    border: transparent;
     /* height: 10vh; */
-    width: 15vw;
-    padding-top: 15px;
-    margin: 15px 0;
+    width: 100%;
+    justify-content: center;
+    margin: -1vh -2px;
     background-color: white;
     /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); */
-    border-radius: 10px;
-    animation: sideLeft 3s ease-in-out infinite;
+    /* border-radius: 10px; */
 }
 .box-sidebar .arrow:hover{
-    transform: translateX(2px);
-    box-shadow: 0 5px 10px  #6379f4 ;
+    border-left: 2px solid#6379f4;
+    transition: 0.2s ease;
     opacity: 1;
-    animation: sideLeft 3s ease-in-out infinite;
+}
+.box-sidebar .arrow:active{
+    border-left: 2px solid#6379f4;
+    transition: 0.2s ease;
+    opacity: 1;
 }
 .arrow h4{
     margin: 5px;
@@ -126,18 +129,16 @@ body{
 .box-sidebar .plus{
     display: flex;
     flex-direction: row;
+    border: transparent;
     /* height: 10vh; */
-    width: 15vw;
-    padding-top: 15px;
-    margin: 15px 0;
+    width: 100%;
+    justify-content: center;
+    margin: 5vh -2px;
     background-color: white;
-    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); */
-    border-radius: 10px;
 }
 .box-sidebar .plus:hover{
-    transform: translateX(2px);
-    box-shadow: 0 5px 10px #aaa ;
-    opacity: 1;
+    border-left: 2px solid#aaa;
+    transition: 0.2s ease;
 }
 .plus h4{
     margin: 5px;
@@ -146,18 +147,16 @@ body{
 .box-sidebar .user{
     display: flex;
     flex-direction: row;
+    border: transparent;
     /* height: 10vh; */
-    width: 15vw;
-    padding-top: 15px;
-    margin: 15px 0;
+    width: 100%;
+    justify-content: center;
+    margin: -1vh -2px;
     background-color: white;
-    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); */
-    border-radius: 10px;
 }
 .box-sidebar .user:hover{
-    transform: translateX(2px);
-    box-shadow: 0 5px 10px #aaa ;
-    opacity: 1;
+    border-left: 2px solid#aaa;
+    transition: 0.2s ease;
 }
 .user h4{
     margin: 5px;
@@ -166,18 +165,16 @@ body{
 .box-sidebar .bottom{
     display: flex;
     flex-direction: row;
+    border: transparent;
     /* height: 10vh; */
-    width: 15vw;
-    padding-top: 15px;
-    margin: 35px 0;
+    width: 100%;
+    justify-content: center;
+    margin: 15vh -2px;
     background-color: white;
-    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); */
-    border-radius: 10px;
 }
 .box-sidebar .bottom:hover{
-    transform: translateX(2px);
-    box-shadow: 0 5px 10px #aaa ;
-    opacity: 1;
+    border-left: 2px solid#aaa;
+    transition: 0.2s ease;
 }
 .bottom h4{
     margin: 5px;
@@ -210,13 +207,13 @@ body{
     margin: 10vh 3vw;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    animation: sideLeft 3s ease-in-out infinite;
+    /* animation: sideLeft 3s ease-in-out infinite; */
 }
 .first-user:hover{
     transform: translateX(2px);
     box-shadow: 0 5px 10px  #d0d3d4 ;
     opacity: 1;
-    animation: sideLeft 3s ease-in-out infinite;
+    /* animation: sideLeft 3s ease-in-out infinite; */
 }
 .first-user img{
     margin: 10px 10px;
