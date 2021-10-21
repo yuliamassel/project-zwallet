@@ -143,23 +143,23 @@ button:hover{
     flex-direction: row;
     justify-content: space-around;
 }
-.support .first-box:hover{
+/* .support .first-box:hover{
     background: #6379f4;
     transition: 0.2s ease;
     transform: translateY(-10%);
     border-radius: 5px;
-}
-.support .second-box:hover{
+} */
+/* .support .second-box:hover{
     background: #6379f4;
     transition: 0.2s ease;
     transform: translateY(-10%);
     border-radius: 5px;
-}
+} */
 .support .third-box{
     width: 170px;
     height: 115px;
 }
-.support .third-box:hover{
+/* .support .third-box:hover{
     background: #6379f4;
     transition: 0.2s ease;
     transform: translateY(-10%);
@@ -170,7 +170,7 @@ button:hover{
     transition: 0.2s ease;
     transform: translateY(-10%);
     border-radius: 5px;
-}
+} */
 /* -------------------------------support end-------------------------------------- */
 
 @keyframes up{
@@ -258,23 +258,25 @@ section{
 .cards .contact:hover{
     /* background: #6379f4; */
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px #6379f4 ;
+    box-shadow: 0 5px 10px #aed6f1;
     opacity: 1;
-    animation: up 3s ease-in-out infinite;
+    transition-duration: 1s;
+    /* animation: up 3s ease-in-out infinite; */
 }
 .cards .data:hover{
     /* background: #6379f4; */
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px #6379f4 ;
-    opacity: 1;
-    animation: up 3s ease-in-out infinite;
+    box-shadow: 0 5px 10px #aed6f1 ;
+    transition-duration: 1s;
+    /* animation: up 3s ease-in-out infinite; */
 }
 .cards .download:hover{
     /* background: #6379f4; */
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px #6379f4 ;
+    box-shadow: 0 5px 10px #aed6f1;
     opacity: 1;
-    animation: up 3s ease-in-out infinite;
+    transition: 1s;
+    /* animation: up 3s ease-in-out infinite; */
 }
 /* -------------------------cards end-------------------------------- */
 
