@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="../all.css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,16 +21,21 @@
         <h1 class="title left">Zwallet</h1>
       </div>
       <div class="navbar-column right">
-        <img
+        <img class="robert"
           src="img/Rectangle 25.svg"
           alt="Robert Chandler"
           width="52"
           height="52"
         />
         <div class="nav-user-info">
+          <div class="image">
+            <img src="img/Time.svg" alt="">
+            <img class="left" src="img/connection.svg" alt="">
+          </div>
           <div class="fw-bold">
             Robert Chandler
             <img class="icon notification" src="img/bell.svg" alt="" />
+            <p>Hello,</p>
           </div>
           <span> +62 8139 3877 7946 </span>
         </div>
@@ -41,46 +47,18 @@
     <div class="container">
       <aside class="sidebar-menu">
         <div class="box-sidebar">
-          <div class="grid">
-            <img src="img/grid.svg" alt="grid" width="28" height="28" />
-            <h4>Dashboard</h4>
-        </div>
-        <div class="arrow">
-          <img
-          src="img/arrow-up.svg"
-          alt="arrow"
-          width="28"
-          height="28"
-          />
-          <h4>Transfer</h4>
-        </div>
-        <div class="plus">
-          <img
-          src="img/plus.svg"
-          alt="plus"
-          width="28"
-          height="28"
-          />
-          <h4>TopUp</h4>
-        </div>
-        <div class="user">
-          <img
-          src="img/user.svg"
-          alt="user"
-          width="28"
-          height="28"
-          />
-          <h4>Profile</h4>
-        </div>
-        <div class="bottom">
-          <img
-          src="img/log-out.svg"
-          alt="log-out"
-          width="28"
-          height="28"
-          />
-          <h4>Logout</h4>
-        </div>
+          <ul>
+            <li class="top" style="list-style-type: none;"><a href="#"><img src="img/grid.svg" alt="">
+              Dashboard</a></li>
+            <li class="top" style="list-style-type: none;"><a class="black" href="#"><img src="img/arrow-up.svg" alt="">
+              Transfer</a></li>
+            <li class="top" style="list-style-type: none;"><a class="black" href="#"><img src="img/plus.svg" alt="">
+              Top Up</a></li>
+            <li class="top" style="list-style-type: none;"><a class="black" href="#"><img src="img/user.svg" alt="">
+              Profile</a></li>
+            <li style="list-style-type: none;"><a class="black" href="#"><img src="img/log-out.svg" alt="">
+              Logout</a></li>
+          </ul>
         </div>
       </aside>
       <div class="main-content">
@@ -103,6 +81,10 @@
               width="100"
               height="50"
             />
+            <div class="btn">
+              <button><img src="img/arrow-blue.png" alt=""><p>Transfer</p></button>
+              <button><img src="img/plus-blue.png" alt=""><p>Top Up</p></button>
+            </div>
           </div>
         </div>
       </div>
@@ -134,31 +116,43 @@
       <div class="main-transaction-history">
         <div class="main-history-wrapper">
           <div class="box-history">
-            <h5>Transaction History</h5>
-            <p>See All</p>
+            <h4>Transaction History</h4>
+            <p>See all</p>
           </div>
           <div class="first-user">
-            <img src="img/gambar1.svg" alt="" width="50" height="50" />
-            <h5>Samuel Suhi</h5>
-            <p>Tranfer</p>
+            <img class="img-user" src="img/gambar1.svg" alt="" width="40" height="40" />
+            <h5 class="name-user">Samuel Suhi</h5>
+            <p class="info">Tranfer</p>
             <h3>+Rp50.000</h3>
           </div>
+          <div class="second-user2">
+            <img class="img-user" src="img/spotify.png" alt="" width="40" height="40" />
+            <h5 class="name-user">Spotify</h5>
+            <p class="info2">Subscription</p>
+            <h3>-Rp49.000</h3>
+          </div>
           <div class="second-user">
-            <img src="img/logo-N.svg" alt="" width="50" height="50" />
-            <h5>Netflix</h5>
-            <p>Subscription</p>
+            <img class="img-user" src="img/logo-N.svg" alt="" width="40" height="40" />
+            <h5 class="name-user">Netflix</h5>
+            <p class="info2">Subscription</p>
             <h3>-Rp149.000</h3>
           </div>
+          <div class="third-user2">
+            <img class="img-user" src="img/Bobi.png" alt="" width="40" height="40" />
+            <h5 class="name-user">Bobi Sammy</h5>
+            <p class="info3">Tranfer</p>
+            <h3>+Rp1.150.000</h3>
+          </div>
           <div class="third-user">
-            <img src="img/gambar7.svg" alt="" width="50" height="50" />
-            <h5>Christine</h5>
-            <p>Tranfer</p>
+            <img class="img-user" src="img/gambar7.svg" alt="" width="40" height="40" />
+            <h5 class="name-user">Christine</h5>
+            <p class="info3">Tranfer</p>
             <h3>+Rp150.000</h3>
           </div>
           <div class="fourth-user">
-            <img src="img/logo-A.svg" alt="" width="50" height="50" />
-            <h5>Adobe Inc.</h5>
-            <p>Subcription</p>
+            <img class="img-user" src="img/logo-A.svg" alt="" width="40" height="40" />
+            <h5 class="name-user">Adobe Inc.</h5>
+            <p class="info4">Subcription</p>
             <h3>-Rp249.000</h3>
           </div>
         </div>
