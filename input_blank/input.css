@@ -50,24 +50,24 @@
         display: none;
     }
     .input-nominal input{
-        transform: translate(20vw, 38vh);
+        transform: translate(20vw, 28vh);
         background-color: #fafcff;
         max-width: 46vw;
     }
     .info-nominal span{ 
-        transform: translate(-44vw, 20vh);
+        transform: translate(-41vw, 10vh);
         position: absolute;
         color: #7C7895;
         font-size: 16px;
     }
     .notes input{
-        transform: translate(-23vw, 35vh);
+        transform: translate(-23vw, 25vh);
         background-color: #fafcff;
         width: 112vw;
         text-align: left!important;
     }
     .notes img{
-        transform: translate(79vw, 36vh);
+        transform: translate(79vw, 27vh);
     }
     .LoginBtn{
         display: none;
@@ -224,6 +224,25 @@
         box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
         border-radius: 10px;
     }
+    .image{
+        display: block!important;
+        transform: translateY(-8vh);
+    }
+    .image .left{
+        transform: translateX(72vw);
+    }
+    .back-way{
+        display: block!important;
+    }
+    .back-way h3{
+        transform: translate(10vw, -8vh);
+    }
+    .back-way img{
+        transform: translate(10px, -20px);
+    }
+    .box-history h4{
+        display: none;
+    }
     
 }
 
@@ -231,6 +250,12 @@
 
 @media screen and (max-width:1500px){
     .phone-number{
+        display: none;
+    }
+    .image{
+        display: none;
+    }
+    .back-way{
         display: none;
     }
 }
