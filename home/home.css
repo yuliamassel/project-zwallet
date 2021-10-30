@@ -509,6 +509,9 @@ body{
     margin-left: 30vw;
     font-style: bold;
 }
+.box-history a{
+    text-decoration: none;
+}
 .first-user{
     display: flex;
     flex-direction: row;
