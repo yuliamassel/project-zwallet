@@ -5,31 +5,373 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="history.css" />
-    <link rel="stylesheet" href="../all.css/all.css" />
+    <!-- <link rel="stylesheet" href="../all.css/all.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>History Page</title>
   </head>
+
+  <style>
+    @media screen and ( max-width:770px) {
+      /* .main-history-wrapper .second-user h6{
+        transform: translateX(-1vw);
+      } */
+      .box-sidebar ul{
+        width: 91%!important;
+      }
+      .box-sidebar li{
+        margin-top: 3vh;
+      }
+      .box-sidebar .top{
+        margin-top: 2vh!important;
+      }
+      .sidebar-menu .box-sidebar a{
+        font-size: 13px;
+      }
+      .sidebar-menu .box-sidebar img{
+        width: 20%;
+        margin-left: 2vw;
+      }
+      .box-history h4{
+        font-size: 16px;
+      }
+      .first-user img{
+        width: 8%;
+        /* transform: translateX(1vw); */
+      }
+      .first-user h6{
+        transform: translate(-9vw, -1vh);
+        font-size: 13px;
+      }
+      .first-user p{
+          transform: translate(-30vw, 3vh);
+          font-size: 11px;
+          color: #aaa;
+      }
+      .first-user h3{
+          transform: translateX(-3vw);
+          color: #00ff00;
+          font-size: 13px;
+      }
+      .second-user img{
+        width: 8%;
+        /* transform: translateX(1vw); */
+      }
+      .second-user h6{
+        transform: translate(-9vw, -1vh);
+        font-size: 13px;
+      }
+      .second-user p{
+          transform: translate(-26vw, 3vh);
+          font-size: 11px;
+          color: #aaa;
+      }
+      .second-user h3{
+          transform: translateX(-3vw);
+          color: #ff5b37;
+          font-size: 13px;
+      }
+      .third-user{
+        transform: translate(3vh, 2vw);
+      }
+      .third-user img{
+        width: 8%;
+        /* transform: translateX(1vw); */
+      }
+      .third-user h6{
+        transform: translate(-9vw, -1vh);
+        font-size: 13px;
+      }
+      .third-user p{
+          transform: translate(-28vw, 3vh);
+          font-size: 11px;
+          color: #aaa;
+      }
+      .third-user h3{
+          transform: translateX(-3vw);
+          color: #00ff00;
+          font-size: 13px;
+      }
+      .fourth-user img{
+        width: 8%;
+      /* transform: translateX(1vw); */
+      }
+      .fourth-user h6{
+        transform: translate(-7.5vw, -1vh);
+        font-size: 13px;
+      }
+      .fourth-user p{
+          transform: translate(-26.5vw, 3vh);
+          font-size: 11px;
+          color: #aaa;
+      }
+      .fourth-user h3{
+          transform: translateX(-3vw);
+          color: #ff5b37;
+          font-size: 13px;
+      }
+      .mid-text p{
+        font-size: 13px;
+        width: 20vw;
+      }
+      footer{
+        transform: translate(-5vw, 35vh);
+      }
+    }
+    @media screen and (max-width:375px) {
+      footer{
+        display: none;
+      }
+      body{
+        background-color: #fafcff;
+        overflow-x: hidden!important;
+      }
+      .box-history h4{
+        display: none;
+      }
+      .back-way h3{
+        transform: translate(18vw, 3vh);
+      }
+      .back-way img{
+        transform: translate(1vw, -1vh);
+      }
+      .main-transaction-history{
+        transform: translate(45vw, 10vh);        
+      }
+      .main-history-wrapper{
+        width: 100vw;
+        transform: translateX(-15vw);
+        background-color: #fafcff;
+        box-shadow: none;
+      }
+      .first-user{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 13%;
+        margin-top: 7vh;
+        padding-bottom: 1vh;
+        transform: translate(-1vw, 5vh);
+        background-color: #fff;
+        width: 98%;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .first-user img{
+        width: 70px;
+        height: 70px;
+        padding: 3vw;
+      }
+      .first-user h6{
+        transform: translate(-9vw, -1vh);
+        font-size: 13px;
+      }
+      .first-user p{
+          transform: translate(-39vw, 3vh);
+          font-size: 11px;
+          color: #aaa;
+      }
+      .first-user h3{
+          transform: translateX(-3vw);
+          color: #00ff00;
+          font-size: 13px;
+      }
+      .second-user2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 15%;
+        margin-top: 2vh;
+        padding-bottom: 1vh;
+        transform: translate(-1vw, 5vh);
+        background-color: #fff;
+        width: 98%;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .second-user2 img{
+        width: 70px;
+        height: 70px;
+        padding: 3vw;
+        /* transform: translateX(1vw); */
+      }
+      .second-user2 h6{
+        transform: translate(-9vw, -1vh);
+        font-size: 13px;
+      }
+      .second-user2 p{
+          transform: translate(-32.5vw, 3vh);
+          font-size: 11px;
+          color: #aaa;
+      }
+      .second-user2 h3{
+          transform: translateX(-3vw);
+          color: #ff5b37;
+          font-size: 13px;
+      }
+      .second-user{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 15%;
+        margin-top: 2vh;
+        padding-bottom: 1vh;
+        transform: translate(-1vw, 12vh);
+        background-color: #fff;
+        width: 98%;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .second-user img{
+        width: 70px;
+        height: 70px;
+        padding: 3vw;
+        /* transform: translateX(1vw); */
+      }
+      .second-user h6{
+        transform: translate(-9vw, -1vh);
+        font-size: 13px;
+      }
+      .second-user p{
+          transform: translate(-30.5vw, 3vh);
+          font-size: 11px;
+          color: #aaa;
+      }
+      .second-user h3{
+          transform: translateX(-3vw);
+          color: #ff5b37;
+          font-size: 13px;
+      }
+      .third-user2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 13%;
+        margin-top: 7vh;
+        padding-bottom: 1vh;
+        transform: translate(-1vw, 7vh);
+        background-color: #fff;
+        width: 98%;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .third-user2 img{
+        width: 70px;
+        height: 70px;
+        padding: 3vw;
+      }
+      .third-user2 h6{
+        transform: translate(-8vw, -1vh);
+        font-size: 13px;
+      }
+      .third-user2 p{
+          transform: translate(-37vw, 3vh);
+          font-size: 11px;
+          color: #aaa;
+      }
+      .third-user2 h3{
+          transform: translateX(-3vw);
+          color: #00ff00;
+          font-size: 13px;
+      }
+      .fourth-user2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 15%;
+        margin-top: 2vh;
+        padding-bottom: 1vh;
+        transform: translate(-1vw, 8vh);
+        background-color: #fff;
+        width: 98%;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .fourth-user2 img{
+        width: 70px;
+        height: 70px;
+        padding: 3vw;
+        /* transform: translateX(1vw); */
+      }
+      .fourth-user2 h6{
+        transform: translate(-8vw, -1vh);
+        font-size: 13px;
+      }
+      .fourth-user2 p{
+          transform: translate(-36vw, 3vh);
+          font-size: 11px;
+          color: #aaa;
+      }
+      .fourth-user2 h3{
+          transform: translateX(-3vw);
+          color: #ff5b37;
+          font-size: 13px;
+      }
+      .mid-text p{
+        font-size: 13px;
+        width: 20vw;
+        transform: translateY(-6vh);
+      }
+      .low-part{
+        display: flex;
+        flex-direction: row;
+        height: 15vh;
+        width: 100%;
+        transform: translate(5vw, 12vh);
+      }
+      .low-part .red{
+        width: 18%;
+        height: 7vh;
+        margin-left: -2vw;
+        padding: 4vw;
+        border-radius: 10px;
+        background-color: white;
+      }
+      .low-part .green{
+        width: 18%;
+        height: 7vh;
+        margin-left: 2vw;
+        padding: 4vw;
+        border-radius: 10px;
+        background-color: white;
+      }
+      .low-part button{
+        width: 50%;
+        border: none;
+        color: #6379f4;
+        margin-left: 2vw;
+        height: 7vh;
+        padding: 4vw;
+        border-radius: 10px;
+        background-color: white;
+      }
+      
+    }
+
+  </style>
+
+
   <body>
     <!--------------------------------nav start--------------------------------->
-    <div class="container">
-    <nav class="navbar shadow">
-      <div class="navbar-column left">
-        <h1 class="title left">Zwallet</h1>
+    <div class="container container-xl col-xl-12 ps-lg-3 m-md-n1 p-md-0">
+      <nav class="navbar navbar-expand-xll shadow-sm  mt-lg-0 rounded-top m-md-0 d-none d-md-block">
+        <div class="navbar-column left">
+          <h1 class="title left d-none d-md-block">Zwallet</h1>
       </div>
       <div class="navbar-column right">
         <img
-          src="img/Rectangle 25.svg"
+        src="img/Rectangle 25.svg"
           alt="Robert Chandler"
           width="52"
           height="52"
         />
         <div class="nav-user-info">
-          <div class="fw-bold">
+          <div class="exam">
             Robert Chandler
             <img class="icon notification" src="img/bell.svg" alt="" />
           </div>
@@ -38,10 +380,11 @@
       </div>
     </nav>
     <!---------------------------------------nav end---------------------------------->
-
+    
     <!-----------------------------------sidebar start-------------------------------->
     
-      <aside class="sidebar-menu">
+    <div class="container-fluid">
+      <aside class="sidebar-menu ms-md-4 pb-md-5 d-none d-md-block">
         <div class="box-sidebar">
           <ul>
             <li class="top" style="list-style-type: none;"><a href="#"><img src="img/grid.svg" alt="">
@@ -63,11 +406,7 @@
       <!---------------------------------history start------------------------------------->
       <div class="main-transaction-history">
         <div class="main-history-wrapper">
-          <div class="image">
-            <img src="img/Time Style.png" alt="">
-            <img class="left" src="img/connection.png" alt="">
-          </div>
-          <div class="back-way">
+          <div class="back-way d-block d-md-none">
             <h3>History</h3>
             <img src="img/arrow-left.png" alt="">
           </div>
@@ -77,19 +416,19 @@
           </div>
           <div class="first-user">
             <img class="img-user" src="img/gambar1.svg" alt="" width="50" height="50" />
-            <h5 class="name-user">Samuel Suhi</h5>
-            <p class="info">Tranfer</p>
-            <h3 class="text-color">+Rp50.000</h3>
+            <h6>Samuel Suhi</h6>
+            <p>Tranfer</p>
+            <h3>+Rp50.000</h3>
           </div>
           <div class="second-user2">
             <img class="img-user" src="img/spotify.png" alt="" width="50" height="50" />
-            <h5 class="name-user">Spotify</h5>
+            <h6 class="name-user">Spotify</h6>
             <p class="info2">Subscription</p>
             <h3 class="text-color2">-Rp49.000</h3>
           </div>
-          <div class="second-user">
+          <div class="second-user mt-lg-2">
             <img class="img-user" src="img/logo-N.svg" alt="" width="50" height="50" />
-            <h5 class="name-user">Netflix</h5>
+            <h6 class="name-user">Netflix</h6>
             <p class="info2">Subscription</p>
             <h3 class="text-color2">-Rp149.000</h3>
           </div>
@@ -97,26 +436,26 @@
             <p>This Month</p>
           </div>
           <div class="third-user2">
-            <img class="img-user" src="img/Bobi.png" alt="" width="40" height="40" />
-            <h5 class="name-user">Bobi Sammy</h5>
+            <img class="img-user ms-1" src="img/Bobi.png" alt="" width="40" height="40" />
+            <h6 class="name-user">Bobi Sammy</h6>
             <p class="info3">Tranfer</p>
             <h3>+Rp1.150.000</h3>
           </div>
-          <div class="third-user">
+          <div class="third-user d-none d-md-block">
             <img class="img-user" src="img/gambar7.svg" alt="" width="50" height="50" />
-            <h5 class="name-user">Christine</h5>
+            <h6 class="name-user">Christine</h6>
             <p class="info3">Tranfer</p>
             <h3 class="text-color">+Rp150.000</h3>
           </div>
           <div class="fourth-user2">
-            <img class="img-user" src="img/momo.svg" alt="" width="50" height="50" />
-            <h5 class="name-user">Momo Taro</h5>
+            <img class="img-user ms-1" src="img/momo.svg" alt="" width="50" height="50" />
+            <h6 class="name-user">Momo Taro</h6>
             <p class="info4">Transfer</p>
             <h3 class="text-color2">-Rp200.000</h3>
           </div>
-          <div class="fourth-user">
+          <div class="fourth-user d-none d-md-block">
             <img class="img-user" src="img/logo-A.svg" alt="" width="50" height="50" />
-            <h5 class="name-user">Adobe Inc.</h5>
+            <h6 class="name-user">Adobe Inc.</h6>
             <p class="info4">Subcription</p>
             <h3 class="text-color2">-Rp249.000</h3>
           </div>
@@ -137,5 +476,7 @@
         <p class="contact">contact@zwallet.com</p>
     </footer>
     </div>
+  </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
