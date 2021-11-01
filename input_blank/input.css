@@ -1,4 +1,4 @@
-@media screen and (max-width:600px){
+/* @media screen and (max-width:600px){
     .container{
         max-width: 50vh;
         justify-content: center;
@@ -28,7 +28,6 @@
         margin-bottom: 2vh;
         align-items: center;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-        /* border-radius: 5px; */
     }
     .first-user{
         display: block!important;
@@ -72,158 +71,6 @@
     .LoginBtn{
         display: none;
     }
-    .phone-number{
-        display: flex;
-        flex: 50%;
-        transform: translate(10vw, 60vh);
-        flex-direction: row;
-    }
-    .phone-number{
-        display: block!important;
-    }
-    .one{
-        width: 20vw;
-        height: 20vw;
-        padding-left: 10vw;
-        position: absolute;
-        /* justify-content: center; */
-        /* align-items: center; */
-        font-size: 14vw;
-        transform: translate(-7vw, 0vh);
-        background-color: white;
-        box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
-        border-radius: 10px;
-    }
-    .two{
-        width: 20vw;
-        height: 20vw;
-        padding-left: 10vw;
-        position: absolute;
-        /* justify-content: center; */
-        /* align-items: center; */
-        font-size: 14vw;
-        transform: translate(28vw, 0vh);
-        background-color: white;
-        box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
-        border-radius: 10px;
-    }
-    .three{
-        width: 20vw;
-        height: 20vw;
-        padding-left: 10vw;
-        position: absolute;
-        /* justify-content: center; */
-        /* align-items: center; */
-        font-size: 14vw;
-        transform: translate(63vw, 0vh);
-        background-color: white;
-        box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
-        border-radius: 10px;
-    }
-    .four{
-        width: 20vw;
-        height: 20vw;
-        padding-left: 10vw;
-        position: absolute;
-        /* justify-content: center; */
-        /* align-items: center; */
-        font-size: 14vw;
-        transform: translate(-7vw, 15vh);
-        background-color: white;
-        box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
-        border-radius: 10px;
-    }
-    .five{
-        width: 20vw;
-        height: 20vw;
-        padding-left: 10vw;
-        position: absolute;
-        /* justify-content: center; */
-        /* align-items: center; */
-        font-size: 14vw;
-        transform: translate(28vw, 15vh);
-        background-color: white;
-        box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
-        border-radius: 10px;
-    }
-    .six{
-        width: 20vw;
-        height: 20vw;
-        padding-left: 10vw;
-        position: absolute;
-        /* justify-content: center; */
-        /* align-items: center; */
-        font-size: 14vw;
-        transform: translate(63vw, 15vh);
-        background-color: white;
-        box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
-        border-radius: 10px;
-    }
-    .seven{
-        width: 20vw;
-        height: 20vw;
-        padding-left: 10vw;
-        position: absolute;
-        /* justify-content: center; */
-        /* align-items: center; */
-        font-size: 14vw;
-        transform: translate(-7vw, 30vh);
-        background-color: white;
-        box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
-        border-radius: 10px;
-    }
-    .eight{
-        width: 20vw;
-        height: 20vw;
-        padding-left: 10vw;
-        position: absolute;
-        /* justify-content: center; */
-        /* align-items: center; */
-        font-size: 14vw;
-        transform: translate(28vw, 30vh);
-        background-color: white;
-        box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
-        border-radius: 10px;
-    }
-    .nine{
-        width: 20vw;
-        height: 20vw;
-        padding-left: 10vw;
-        position: absolute;
-        /* justify-content: center; */
-        /* align-items: center; */
-        font-size: 14vw;
-        transform: translate(63vw, 30vh);
-        background-color: white;
-        box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
-        border-radius: 10px;
-    }
-    .zero{
-        width: 20vw;
-        height: 20vw;
-        padding-left: 10vw;
-        position: absolute;
-        /* justify-content: center; */
-        /* align-items: center; */
-        font-size: 14vw;
-        transform: translate(27vw, 45vh);
-        background-color: white;
-        box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
-        border-radius: 10px;
-    }
-    .delete{
-        width: 20vw;
-        height: 20vw;
-        padding-left: 10vw;
-        position: absolute;
-        /* justify-content: center; */
-        /* align-items: center; */
-        font-size: 14vw;
-        transform: translate(27vw, 45vh);
-        background-color: white;
-        box-shadow: 0 4px 20px rgb(0 0 0 / 5%);
-        border-radius: 10px;
-    }
     .image{
         display: block!important;
         transform: translateY(-8vh);
@@ -244,7 +91,7 @@
         display: none;
     }
     
-}
+} */
 
 
 
@@ -283,7 +130,7 @@ body{
 
 .navbar {
     width: 100%;
-    height: 10%;
+    height: 13vh;
     background-color: white;
     padding: 15px;
     padding-right: 30px;
@@ -304,9 +151,11 @@ body{
     float: right;
     margin-top: -60px;
     padding-right: 10%;
+    transform: translateY(4vh);
 }
-.fw-bold{
+.exam{
     margin-bottom: -15px;
+    font-weight: 500;
 }
 .icon.notification{
     margin-left: 120%;
@@ -342,7 +191,7 @@ body{
 } */
 .sidebar-menu{
     width: 20%;
-    margin: 18px 5vw;
+    margin: 18px 3vw;
 }
 .box-sidebar{
     display: flex;
@@ -358,18 +207,18 @@ body{
 .sidebar-menu .box-sidebar ul{
     position: absolute;
     margin-left: -3vw;
-    width: 20%;
+    width: 22%;
 }
 .sidebar-menu .box-sidebar li{
-    margin-top: 10vh;
+    margin-top: 5vh;
     padding: 14px 20px;
     transition: all 0.3s linear;
 }
 .sidebar-menu .box-sidebar .top{
-    margin-top: 1vh;
+    margin-top: 3vh;
 }
 .sidebar-menu .box-sidebar img{
-    margin-bottom: -1vh;
+    margin-bottom: 1vh;
     padding-right: 8px;
 }
 .sidebar-menu .box-sidebar a{
@@ -392,10 +241,10 @@ body{
 /* ---------------------------history start------------------------------------------ */
 
 .main-transaction-history{
-    width: 80vh;
+    width: 60%;
     height: 70vh;
     position: absolute;
-    margin: 9vw 55vh;
+    transform: translate(25vw, -72vh);
     padding-right: 20vw;
     background-color: white;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -405,13 +254,14 @@ body{
 }
 .box-history h4{
     margin: 2vw 4vh;
+    font-size: 16px;
 }
 .first-user{
     width: 50vw;
     height: 11vh;
     position: absolute;
     margin: 10vh 3vw;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); */
     border-radius: 10px;
     /* animation: sideLeft 3s ease-in-out infinite; */
 }
@@ -425,17 +275,18 @@ body{
     margin: 10px 10px;
 }
 .first-user h5{
-    margin: -5vw 10vh;
+    margin: -4.5vw 12vh;
+    font-size: 16px;
 }
 .first-user span{
     position: absolute;
-    margin: 6vw 10vh;
+    margin: 5vw 12vh;
     font-size: 13px;
     color: #aaa;
 }
 .text-desc{
     font-size: 16px;
-    margin: 10vh 5vw;
+    transform: translate(4vw, 10vh);
     color: #aaa;
 }
 /* .input-nominal{
@@ -456,7 +307,7 @@ body{
     width: 50%;
     border: none;
     outline: none;
-    margin: -10vh 25vw;
+    transform: translate(20vw, 10vh);
     border-left: 2px solid#e74c3c;
     font-size: 42px;
     color: #d0d3d4;
@@ -467,10 +318,10 @@ body{
     height: 10vh;
     width: 100%;
     font-weight: bold;
-    margin: 1vw 44vh;
+    transform: translate(17vw, 22vh);
 }
 .notes{
-    margin: -5vh 22vw;
+    transform: translate(16vw, 19vh);
 }
 .notes input{
     display: block;
