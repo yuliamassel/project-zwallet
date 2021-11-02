@@ -19,154 +19,67 @@
     />
     <title>Login Zwallet</title>
   </head>
-
-  <style>
-    @media screen and (max-width: 720px) {
-      .start-box {
-        background-color: #fafcff;
-        width: 100%;
-        padding: 0 !important;
-      }
-      .title-right h2 {
-        transform: translate(0vw, -2vh);
-        color: #6379f4;
-        width: 100vw;
-        height: 30vh;
-        padding-top: 12vh;
-      }
-      .input {
-        display: flex;
-        flex-direction: column;
-        height: 100vh !important;
-        width: 100% !important;
-        padding: 2vw;
-        margin-top: 17vh;
-        align-items: center;
-        border-top-right-radius: 25px;
-        border-top-left-radius: 25px;
-        background-color: white;
-      }
-      .input .form-input {
-        transform: translateY(12vh);
-      }
-      .forgot-link {
-        transform: translateY(10vh);
-      }
-      .LoginBtn {
-        width: 90vw;
-      }
-      .input .away {
-        transform: translateY(13vh);
-      }
-    }
-
-    .row {
-      flex-wrap: nowrap;
-    }
-    .start-box {
-      flex-shrink: none;
-      max-width: 100%;
-      padding: 5vh;
-    }
-    .start-box .row {
-      width: 0;
-    }
-  </style>
   <body>
-    <div class="container-fluid ps-0 g-0">
-      <div class="container m-0 p-sm-0">
-        <div class="row">
-          <div class="col-lg-7 col-md-7 col-sm-7">
-            <div class="login-box d-none d-md-block">
-              <div class="title">
-                <h1>Zwallet</h1>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                  <path
-                    fill="#6495ed"
-                    fill-opacity="1"
-                    d="M0,64L48,90.7C96,117,192,171,288,197.3C384,224,480,224,576,202.7C672,181,768,139,864,144C960,149,1056,203,1152,229.3C1248,256,1344,256,1392,256L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
-                  ></path>
-                </svg>
-              </div>
-              <div class="cover-inner">
-                <img
-                  class="col-lg-7 w-80 col-md-7 w-500"
-                  src="img/handphone.png"
-                  alt=""
-                />
-                <h2 class="col-lg-7 fs-3 col-md-7 fs-5">
-                  App that Covering Banking Needs.
-                </h2>
-                <p class="col-md-7 ms-6 mt-1">
-                  Zwallet is an application that focussing in bangking needs for
-                  users in the world. Always update and always following world
-                  trends. 5000+ users registered in Zwallet everyday with
-                  worldwide users coverage
-                </p>
-              </div>
-            </div>
-          </div>
+    <div class="container-fluid g-0 px-0">
+      <div class="login-box row">
+        <div class="cover-inner col-6 bg-primary h-100">
+          <h4 class="text-light p-3">Zwallet</h4>
+          <img class="ps-0" src="img/waves.png" alt="" />
+          <img class="hp" src="img/handphone.png" alt="" width="400" />
+          <h4 class="low-text text-light ms-5">
+            App that Covering Banking Needs.
+          </h4>
+          <p class="text-light">
+            Zwallet is an application that focussing in banking needs for all
+            users <br />
+            in the world. Always updated and always following world trends.
+            <br />
+            5000+ users registered in Zwallet everyday with worldwide <br />
+            users coverage.
+          </p>
         </div>
-        <div class="container">
-          <div class="col-lg-7 col-md-7 col-sm-7 g-0">
-            <div class="start-box g-0 me-0">
-              <div class="title-right">
-                <h2>Zwallet</h2>
-                <h1 class="col-md-7 fs-6 w-75 col-lg-7 fs-3 d-none d-md-block">
-                  Starts Accessing Bangking Needs With All Devices and All
-                  Platforms With 30.000+ Users
-                </h1>
-                <p class="col-md-7 w-100 h-75% fs-6 d-none d-md-block">
-                  Transfering money is eassier than ever, you can acces Zwallet
-                  wherever you are. Dekstop, laptop, mobile phone? we cover
-                  allof that for you!
-                </p>
-              </div>
-              <div class="input">
-                <div class="text-moba d-block d-md-none">
-                  <h2>Login</h2>
-                  <p>
-                    Login to your existing account to access<br />
-                    all the features in Zwallet.
-                  </p>
-                </div>
-                <div class="form-input mb-1">
-                  <img class="icon" src="empty/mail.svg" alt="Email" />
-                  <input
-                    type="email"
-                    name=""
-                    id=""
-                    placeholder="Enter Your Email"
-                  />
-                </div>
-                <div class="form-input mb-1">
-                  <img class="icon" src="empty/lock.svg" alt="Password" />
-                  <input
-                    type="password"
-                    name=""
-                    id=""
-                    placeholder="Enter Your Password"
-                  />
-                  <img class="icon right" src="empty/eye-crossed.svg" alt="" />
-                </div>
-                <div class="float-right forgot-link">
-                  <p><a href="#">Forgot Password?</a></p>
-                  <button class="LoginBtn col-md-12 me-3">Login</button>
-                </div>
-                <div class="recourse col-md-7 w-100 fs-6">
-                  <p class="away">
-                    Dont have an account? Let's
-                    <a href="file:///D:/Project_Zwallet/SignUp/sign.html"
-                      >Sign Up</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
+        <div class="input p-5 col">
+          <h3>
+            Start Accessing Banking Needs <br />
+            With All Devices and All Platforms <br />
+            With 30.000+ Users
+          </h3>
+          <p>
+            Transfering money is eassier than ever, you can access <br />
+            Zwallet wherever you are. Desktop, laptop, mobile phone? <br />
+            we cover all of that for you!
+          </p>
+          <div class="email my-5">
+            <img class="mt-3 position-absolute" src="empty/mail.svg" alt="" />
+            <input
+              type="email"
+              name=""
+              id="yuliamassel8@gmail.com"
+              placeholder="Enter your e-mail"
+            />
+          </div>
+          <div class="password my-5">
+            <img class="mt-3 position-absolute" src="empty/lock.svg" alt="" />
+            <input
+              type="password"
+              name=""
+              id="yuliamassel8@gmail.com"
+              placeholder="Enter your password"
+            />
+            <img class="eye" src="empty/eye-crossed.svg" alt="" />
+            <a href="">Forgot password</a>
+          </div>
+          <div class="btnLogin">
+            <button type="button" class="btn btn-primary w-100">Login</button>
+            <p>
+              Dont have an account? Let's
+              <a href="file:///D:/Project_Zwallet/SignUp/sign.html">Sign Up</a>
+            </p>
           </div>
         </div>
       </div>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
