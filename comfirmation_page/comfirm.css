@@ -1,0 +1,27 @@
+body{
+    overflow-y: hidden;
+}
+.brand{
+    font-family: 'Nunito Sans', sans-serif;
+}
+nav{
+    height: 15vh;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.menu-bar{
+    width: 20%!important;
+    height: 70vh;
+    border-radius: 20px;
+}
+.content{
+    width: 60vw!important;
+    height: 70vh;
+    border-radius: 20px;
+}
+.Details{
+    /* width: 50vw; */
+    margin-left: 1vw; 
+    height: 60%;
+    overflow-y: auto;
+}
