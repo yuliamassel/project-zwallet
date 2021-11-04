@@ -48,6 +48,10 @@ nav{
     font-size: 13px;
     transform: translate(-7vw, 3vh);
 }
+.samuel:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* transform: scale(5px); */
+}
 .samuel span{
     color: #00ff00;
     transform: translate(6vw, 1vh);
@@ -61,6 +65,9 @@ nav{
     color: #ff5b37;
     transform: translate(8vw, 1vh);
 }
+.Netflix:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
 .christine p{
     color: #7a7886;
     font-size: 13px;
@@ -70,6 +77,9 @@ nav{
     color: #00ff00;
     transform: translate(5vw, 1vh);
 }
+.christine:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
 .adobe p{
     color: #7a7886;
     font-size: 13px;
@@ -78,4 +88,7 @@ nav{
 .adobe span{
     color: #ff5b37;
     transform: translate(5.5vw, 1vh);
+}
+.adobe:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
