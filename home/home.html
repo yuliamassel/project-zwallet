@@ -5,452 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="home.css" />
-    <link rel="stylesheet" href="../all.css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <title>Home Page</title>
   </head>
-
-
-
-  <style>
-    @media screen and (max-width:1140px){
-      .container-fluid{
-        overflow: hidden;
-      }
-      .main-transaction{
-        transform: translate(27vw, -48vh);
-      }
-      .main-transaction-history{
-        transform: translate(58vw, -48vh);
-      }
-      .box-charts .graphic{
-        margin: 5vh -3vw;
-      }
-      .box-charts .in-right{
-        margin: -9vh 4vw;
-      }
-      .box-charts .in-left{
-        padding: 25px 25px;
-      }
-      .first-user h3{
-        margin-left: 16vw;
-      }
-      .first-user .info{
-        transform: translateX(-1.5vw);
-      }
-      .second-user h3{
-        margin-left: 15vw;
-      }
-      .fourth-user .info4{
-        transform: translateX(0.5vw);
-      }
-      .info3{
-        transform: translate(12.5vw, -12vh);
-      }
-      .main-content{
-        padding-left: 1.5vw;
-      }
-      .main-content .btn{
-        margin-top: 3vh;
-      }
-      .btn button{
-        height: 7vh;
-      }
-      footer{
-        transform: translate(0vw, -41vh);
-      }
-    }
-    @media screen and (max-width:992px){
-      .sidebar-menu .box-sidebar ul{
-        margin-left: -21vw;
-        width: 10%;
-      }
-      .sidebar-menu .box-sidebar li{
-        margin-bottom: -2vh;
-        width: 23vw;
-      }
-      .sidebar-menu .box-sidebar img{
-        width: 20%;
-        margin-left: 2vw;
-        padding-bottom: 1vh;
-      }
-      .sidebar-menu .box-sidebar a{
-        padding-top: 1vh;
-      }
-      .box-charts .graphic{
-        transform: translate(-8vh, -5vw);
-      }
-      .box-charts .in-right{
-        margin: -13vh 5vw;
-      }
-      .box-charts .p-right{
-        margin: -8vh 4vw;
-      }
-      .box-charts .h-right{
-        margin: -4vh 1vw;
-      }
-      .main-content .btn{
-        margin-top: 0vh;
-      }
-      .btn button{
-        align-items: center;
-        justify-content: center;
-        font-size: 10px;
-      }
-      .btn img{
-        width: 35%;
-      }
-      .main-transaction-history .name-user{
-        font-size: 10px;
-        margin: 1vh -2vw;
-      }
-      .main-transaction-history .info{
-        font-size: 10px;
-        transform: translateX(10px);
-      }
-      .main-transaction-history .info2,.info3{
-        transform: translateX(21px);
-        font-size: 10px;
-      }
-      .main-transaction-history .info4{
-        font-size: 10px;
-        transform: translateX(24px);
-      }
-      .main-transaction-history .third-user h3{
-        /* margin-left: 16vw; */
-        font-size: 11px;
-      }
-      .main-transaction-history .second-user h3{
-        font-size: 11px;
-        /* margin-left: 14vw; */
-      }
-      .main-transaction-history .fourth-user h3{
-        font-size: 11px;
-        /* margin-left: 13vw; */
-      }
-      .main-transaction-history .first-user h3{
-        font-size: 11px;
-        margin-left: 18vw;
-      }
-      footer{
-        transform: translate(0vw, -43vh);
-        font-size: 13px;
-      }
-    }
-    @media screen and (max-width:425px){
-      .main-transaction-history{
-        transform: translateY(30vh);
-        position: absolute;
-      }
-      .main-history-wrapper{
-        box-shadow: none;
-      }
-      .box-history{
-        width: 85vw;
-      }
-      .box-history h4{
-        width: 41vw;
-        position: absolute;
-        transform: translate(1vw, -1vh);
-      }
-      .box-history p{
-        width: 40vw;
-        transform: translateX(40vw);
-        font-weight: bold;
-      }
-      .first-user{
-        display: flex;
-        flex-direction: row;
-        height: 10vh;
-        width: 98vw;
-        margin-top: 7vh;
-        transform: translateX(-5vw);
-        align-items: center;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-        border-radius: 5px;
-      }
-      .first-user img{
-        width: 20%;
-        height: 7vh;
-      }
-      .second-user2{
-        display: flex;
-        flex-direction: row;
-        height: 10vh;
-        width: 98vw;
-        margin-top: 1vh;
-        transform: translateX(-5vw);
-        align-items: center;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-        border-radius: 5px;
-      }
-      .second-user2 img{
-        width: 17%;
-        height: 7vh;
-      }
-      .second-user{
-        display: flex;
-        flex-direction: row;
-        height: 10vh;
-        width: 98vw;
-        margin-top: 1vh;
-        transform: translateX(-5vw);
-        align-items: center;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-        border-radius: 5px;
-      }
-      .second-user img{
-        width: 20%;
-        margin-left: 8px;
-        height: 7vh;
-      }
-      .third-user2{
-        display: flex;
-        flex-direction: row;
-        height: 10vh;
-        width: 98vw;
-        margin-top: 2.5vh;
-        transform: translateX(-5vw);
-        align-items: center;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-        border-radius: 5px;
-      }
-      .third-user2 img{
-        width: 17%;
-        height: 7vh;
-      }
-      .main-transaction-history .name-user{
-        font-size: 15px;
-        margin-bottom: 5vh;
-      }
-      .main-transaction-history .info2,.info3{
-        transform: translateX(9px);
-        padding-top: 6vh;
-        font-size: 16px;
-      }
-      .main-transaction-history .info5{
-        margin-left: -3vh;
-        padding-top: 6vh;
-        color: #aaa;
-        font-size: 16px;
-      }
-      .main-transaction-history .info{
-        transform: translateX(-55px);
-        padding-top: 6vh;
-        font-size: 16px;
-      }
-      .main-transaction-history .third-user2 h3{
-        transform: translateX(34vw);
-        font-size: 16px;
-      }
-      .main-transaction-history .second-user h3{
-        font-size: 16px;
-        transform: translateX(11vw);
-      }
-      .main-transaction-history .second-user2 h3{
-        font-size: 16px;
-        transform: translateX(11vw);
-      }
-      .main-transaction-history .first-user h3{
-        font-size: 16px;
-        /* margin-left: 18vw; */
-      }
-      .main-content{
-        transform: translate(5vw);
-        width: 100vw;
-        padding-left: 0vh;
-      }
-      .main-balance{
-        width: 90%;
-        height: 0;
-      }
-      .box-balance{
-        margin-left: -2vw;
-      }
-      .btn{
-        transform: translate(-5vh, 50vw);
-        width: 50vw;
-      }
-      .btn img{
-        width: 25%;
-      }
-      .btn button{
-        background-color: #eaedff;
-        font-size: 18px;
-      }
-      .btn .left{
-        transform: translate(20vh, -20vw);
-      }
-      .navbar{
-        box-shadow: none!important;
-        transform: translateX(4vw);
-      }  
-    }
-  </style>
-
-
-
   <body>
-    <!--------------------------------nav start--------------------------------->
-    <div class="container-fluid px-0 col-lg-12 col-md-12 mb-0">
-    <nav class="navbar shadow-sm px-0 col-lg-12">
-      <div class="navbar-column left">
-        <h1 class="title left fs-3 d-none d-md-block">Zwallet</h1>
-      </div>
-      <div class="navbar-column right">
-        <img class="robert"
-          src="img/Rectangle 25.svg"
-          alt="Robert Chandler"
-          width="52"
-          height="52"
-          />
-          <div class="nav-user-info pt-1">
-            <div class="image">
-              <img src="img/Time.svg" alt="">
-              <img class="left" src="img/connection.svg" alt="">
+    <div class="container-fluid g-0 col-12">
+      <nav
+        class="navbar col-12 justify-content-between shadow-sm rounded-top px-5">
+        <div class="brand text-primary fs-3 font fw-bold ms-5">Zwallet</div>
+        <div class="username d-flex flex-row pe-5">
+          <img class="me-2" src="img/Robert.png" alt="" />
+          Robert Chandler <br />
+          +62 8139 3877 7946
+          <img class="ms-5" src="img/bell.svg" alt="" />
+        </div>
+      </nav>
+      <div class="container d-flex flex-row">
+        <div class="menu-bar col-1 mt-3 shadow-sm border-start-3">
+          <div class="my-3 pt-4 ms-5 w-auto text-primary">
+            <img src="img/grid.svg" alt="" /> Dasboard
+          </div>
+          <div class="my-3 pt-4 ms-5 ">
+            <img src="img/arrow-up.svg" alt="" /> Transfer
+          </div>
+          <div class="my-3 pt-4 ms-5">
+            <img src="img/plus.svg" alt="" /> Top Up
+          </div>
+          <div class="my-3 pt-4 ms-5">
+            <img src="img/user.svg" alt="" /> User
+          </div>
+          <div class="my-5 pt-5 ms-5">
+            <img src="img/log-out.svg" alt="" /> Log Out
+          </div>
+        </div>
+    <div class="row">
+        <div class="content d-flex flex-row justify-content-between shadow-sm mt-3 ms-5">
+            <div class="info-balance">
+            <p class="text-light p-2">Balance</p>
+            <h4 class="text-light ">Rp120.000</h4>
+            <h6 class="text-light fs-6">089 768 xxx</h6>
+          </div>
+            <div class="Btn d-flex flex-column me-4 p-3">
+              <button type="button" class="btn btn-light  "><img src="img/arrow-grey.png" alt="">Transfer</button>
+                <button type="button" class="btn btn-light mt-3 "><img src="img/plus-grey.png" alt="">Top Up</button>
             </div>
-            <div class="title-right fs-6 mb-0">
-              Robert Chandler
-              <img class="icon notification" src="img/bell.svg" alt="" />
-              <p>Hello,</p>
-            </div>
-            <span> +62 8139 3877 7946 </span>
         </div>
-      </div>
-      
-    </nav>
-    <!---------------------------------------nav end---------------------------------->
-
-    <!-----------------------------------sidebar start-------------------------------->
-      <aside class="sidebar-menu d-none d-md-block col-md-4 ps-md-4 me-md-5">
-        <div class="box-sidebar col-md-12 col-lg-8 ms-lg-5">
-          <ul class="col-md-12">
-            <li class="top" style="list-style-type: none;"><a class="" href="#"><img src="img/grid.svg" alt="">
-              Dashboard</a></li>
-            <li class="top" style="list-style-type: none;"><a class="black" href="#"><img src="img/arrow-up.svg" alt="">
-              Transfer</a></li>
-            <li class="top" style="list-style-type: none;"><a class="black" href="#"><img src="img/plus.svg" alt="">
-              Top Up</a></li>
-            <li class="top" style="list-style-type: none;"><a class="black" href="#"><img src="img/user.svg" alt="">
-              Profile</a></li>
-            <li style="list-style-type: none;"><a class="black" href="#"><img src="img/log-out.svg" alt="">
-              Logout</a></li>
-          </ul>
-        </div>
-      </aside>
-      <div class="main-content flex-fill ps-md-4 ps-lg-0 col-sm-12">
-        <div class="main-balance">
-          <div class="box-balance">
-            <h5>Balance</h5>
-            <h2>Rp 120.000</h2>
-            <p>+62 8139 3877 7946</p>
-            <!-- <img
-              class="grup-bottom"
-              src="img/Group 34.svg"
-              alt="button topup"
-              width="100"
-              height="50"
-            />
-            <img
-              class="grup-over"
-              src="img/Group 33.svg"
-              alt="button transfer"
-              width="100"
-              height="50"
-            /> -->
-            <div class="btn">
-              <button class="mb-3 d-flex flex-row p-3 text-light"><img class="me-2" src="img/arrow-grey.png" alt="">Transfer</button>
-              <button class="left d-flex flex-row p-3 text-light"><img class="me-2" src="img/plus-grey.png" alt="">Top Up</button>
-            </div>
+        <div class="graphic col-5 mt-3 ms-5 shadow-sm">
+          <div class="info-graphic d-flex flex-row justify-content-between ms-2 mt-2">
+            <div class="income">
+            <img src="img/arrow-green.svg" alt="">
+            <p>Income</p>
+            <h6>Rp2.120.000</h6>
+          </div>
+          <div class="exphense">
+            <img src="img/arrow-red.svg" alt="">
+            <p>Exphense</p>
+            <h6>Rp1.560.00</h6>
           </div>
         </div>
-      </div>
-      <!--------------------------sidebar end------------------------------------------------>
-      <!-- <div class="btn2 d-md-none">
-        <button class="mb-3 d-flex flex-row p-3 text-dark"><img class="me-2" src="img/arrow-grey.png" alt="">Transfer</button>
-        <button class="left d-flex flex-row p-3 text-dark"><img class="me-2" src="img/plus-grey.png" alt="">Top Up</button>
-      </div> -->
-      <!------------------------------transaction start-------------------------------------->
-      <div class="main-transaction pt-2  ps-md-2 ps-lg-0 d-none d-md-block">
-        <div class="main-transaction-wrapper">
-          <div class="box-charts">
-            <img class="in-left pt-md-1" src="img/arrow-green.svg" alt="in" />
-            <p>income</p>
-            <h3>Rp2.120.000</h3>
-            <img class="in-right" src="img/arrow-red.svg" alt="" />
-            <p class="p-right">expanse</p>
-            <h3 class="h-right">Rp1.560.000</h3>
-            <img
-              class="graphic"
-              src="img/graphic.svg"
-              alt="graphic"
-              width="400"
-              height="170"
-            />
+        <img class="mx-5" src="img/graphic.svg" alt="" width="250">
+        </div>
+        <div class="box-history col-5 mt-3 ms-3 shadow-sm">
+          <div class="title d-flex p-2 justify-content-between">
+          <h6>Transaction History</h6>
+          <a class="text-decoration-none" href="">See All</a>
+        </div>
+        <div class="user">
+          <div class="samuel d-flex flex-row shadow-sm p-2 rounded-3">
+            <img class="me-2" src="img/samuel.svg" alt="" width="45">
+            <h6>Samuel Suhi</h6>
+            <p>Transfer</p>
+            <span>+Rp50.000</span>
+          </div>
+          <div class="Netflix d-flex flex-row shadow-sm p-2 mt-1 rounded-3">
+            <img class="me-2" src="img/logo-N.svg" alt="" width="45">
+            <h6>Netflix</h6>
+            <p>Subcription</p>
+            <span>-Rp149.000</span>
+          </div>
+          <div class="christine d-flex flex-row shadow-sm p-2 mt-1 rounded-3">
+            <img class="me-2" src="img/Christine.svg" alt="" width="45">
+            <h6>Christine Mar..</h6>
+            <p>Transfer</p>
+            <span>+Rp150.000</span>
+          </div>
+          <div class="adobe d-flex flex-row shadow-sm p-2 mt-1 rounded-3">
+            <img class="me-2" src="img/logo-A.svg" alt="" width="45">
+            <h6>Adobe Inc.</h6>
+            <p>Subcription</p>
+            <span>-Rp249.000</span>
           </div>
         </div>
-      </div>
-      <!-----------------------------------transaction end-------------------------------->
-
-      <!---------------------------------history start------------------------------------->
-      <div class="main-transaction-history col-md-5 ms-4 pt-2">
-        <div class="main-history-wrapper">
-          <div class="box-history ">
-            <h4 class="fs-6 mt-3 md">Transaction History</h4>
-            <p><a href="file:///D:/Project_Zwallet/history/history.html">See all</a></p>
-          </div>
-          <div class="first-user">
-            <img class="img-user me-md-4" src="img/gambar1.svg" alt="" width="40" height="40" />
-            <h5 class="name-user mb-4">Samuel Suhi</h5>
-            <p class="info">Tranfer</p>
-            <h3>+Rp50.000</h3>
-          </div>
-          <div class="second-user2">
-            <img class="img-user" src="img/spotify.png" alt="" width="40" height="40" />
-            <h5 class="name-user">Spotify</h5>
-            <p class="info2">Subscription</p>
-            <h3>-Rp49.000</h3>
-          </div>
-          <div class="second-user">
-            <img class="img-user me-md-4" src="img/logo-N.svg" alt="" width="40" height="40" />
-            <h5 class="name-user mb-4">Netflix</h5>
-            <p class="info2">Subscription</p>
-            <h3>-Rp149.000</h3>
-          </div>
-          <div class="third-user2">
-            <img class="img-user" src="img/Bobi.png" alt="" width="40" height="40" />
-            <h5 class="name-user">Bobi</h5>
-            <p class="info5">Tranfer</p>
-            <h3 style="color: #00ff00;">+Rp1.150.000</h3>
-          </div>
-          <div class="third-user d-none d-md-block">
-            <img class="img-user me-md-4" src="img/gambar7.svg" alt="" width="40" height="40" />
-            <h5 class="name-user mb-4">Christine</h5>
-            <p class="info3">Tranfer</p>
-            <h3>+Rp150.000</h3>
-          </div>
-          <div class="fourth-user d-none d-md-block">
-            <img class="img-user me-md-4" src="img/logo-A.svg" alt="" width="40" height="40" />
-            <h5 class="name-user mb-4">Adobe Inc.</h5>
-            <p class="info4">Subcription</p>
-            <h3>-Rp249.000</h3>
-          </div>
         </div>
-      </div>
-      <footer class=" d-none d-md-block">
-        <p>2020 Zwallet. All right reserved</p>
-        <span>+62 5637 8882 9901</span>
-        <p class="contact">contact@zwallet.com</p>
-    </footer>
+    </div>
+</div>
+<footer class="bg-primary py-2 mt-5 d-flex justify-content-between text-light px-3 flex-row">
+    <div>2020 Zwallet. All right reserved.</div>
+    <div class="ps-5">+62 5637 8882 9901</div>
+    <div>contact@zwallet.com</div>
+</footer>
     </div>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
