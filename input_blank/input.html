@@ -12,184 +12,86 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <title>Input Amount Blank</title>
   </head>
-  <style>
-    @media screen and (max-width:1024px) {
-      .LoginBtn{
-        transform: translate(2vw, 18vh);
-      }
-    }
-    @media screen and (max-width:768px) {
-      .sidebar-menu .box-sidebar ul{
-        width: 24%;
-        margin-left: -5vw;
-      }
-      .sidebar-menu .box-sidebar img{
-        width: 20%;
-      }
-      .sidebar-menu .box-sidebar a{
-        font-size: 13px;
-      }
-      .first-user h5{
-        font-size: 13px;
-        transform: translateY(-3vh);
-      }
-      .first-user span{
-        transform: translateY(-3vh);
-      }
-      .text-desc{
-        font-size: 13px;
-        transform: translate(5vw, 13vh);
-      }
-      .input-nominal input{
-        width: 20%;
-        height: 7vh;
-        margin-top: 3vh;
-      }
-    }
-    @media screen and (max-width:375px){
-      .main-transaction-history{
-        transform: translate(-6vw, 15vh);
-        width: 100%;
-        box-shadow: none;
-      }
-      .back-way{
-        display: block;
-      }
-      .back-way h3{
-        transform: translate(15vw, -11.5vh);
-        font-size: 21px;
-      }
-      .back-way img{
-        transform: translate(5vw, -8vh);
-      }
-      .first-user{
-        width: 100%;
-        margin-left: 0vw;
-        border-radius: 0px;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      }
-      .first-user h5{
-        transform: translate(-6vw, -5vh);
-      }
-      .first-user span{
-        transform: translate(-6vw, -4vh);
-      }
-      .input-nominal input{
-        width: 25%;
-        height: 7vh;
-        transform: translate(35vw, 30vh);
-      }
-      .info-nominal{
-        font-size: 16px;
-        color: #aaa;
-        transform: translate(28vw, 25vh);
-      }
-      .notes input{
-        transform: translate(-8vw, 15vh);
-        width: 100%;
-      }
-      .notes img{
-        transform: translate(0vw, 16vh);
-      }
-      #footer{
-        display: none;
-      }
-    }
-  </style>
   <body>
-    <!--------------------------------nav start--------------------------------->
-    <div class="container">
-    <nav class="navbar shadow-sm rounded-top d-none d-md-block">
-      <div class="navbar-column left">
-        <h1 class="title left fs-3">Zwallet</h1>
-      </div>
-      <div class="navbar-column right">
-        <img
-          src="img/Rectangle 25.svg"
-          alt="Robert Chandler"
-          width="52"
-          height="52"
-        />
-        <div class="nav-user-info">
-          <div class="exam">
-            Robert Chandler
-            <img class="icon notification" src="img/bell.svg" alt="" />
-          </div>
-          <span> +62 8139 3877 7946 </span>
+    <div class="container-fluid g-0 col-12">
+      <nav
+        class="navbar col-12 justify-content-between rounded-top px-5">
+        <div class="brand text-primary fs-3 font fw-bold ms-5">Zwallet</div>
+        <div class="username d-flex flex-row pe-5">
+          <img class="me-2 " src="img/Robert.png" alt="" />
+          Robert Chandler <br />
+          +62 8139 3877 7946
+          <img class="ms-5" src="img/bell.svg" alt="" />
         </div>
-      </div>
-    </nav>
-    <!---------------------------------------nav end---------------------------------->
-
-    <!-----------------------------------sidebar start-------------------------------->
-    <div class="container-fluid">
-      <aside class="sidebar-menu d-none d-md-block">
-        <div class="box-sidebar">
-          <ul>
-            <li class="top" style="list-style-type: none;"><a class="black" href="#"><img src="img/grid.svg" alt="">
-              Dashboard</a></li>
-            <li class="top" style="list-style-type: none;"><a href="#"><img src="img/arrow-up.svg" alt="">
-              Transfer</a></li>
-            <li class="top" style="list-style-type: none;"><a class="black" href="#"><img src="img/plus.svg" alt="">
-              Top Up</a></li>
-            <li class="top" style="list-style-type: none;"><a class="black" href="#"><img src="img/user.svg" alt="">
-              Profile</a></li>
-            <li style="list-style-type: none;"><a class="black" href="#"><img src="img/log-out.svg" alt="">
-              Logout</a></li>
-          </ul>
+      </nav>
+      <div class="container d-flex flex-row">
+        <div class="menu-bar col-1 mt-3 border-start-3">
+          <div class="my-3 pt-4 ms-5 w-auto ">
+            <img src="img/grid.svg" alt="" /> Dasboard
+          </div>
+          <div class="my-3 pt-3 ms-5 text-primary">
+            <img src="img/arrow-up.svg" alt="" /> Transfer
+          </div>
+          <div class="my-3 pt-3 ms-5">
+            <img src="img/plus.svg" alt="" /> Top Up
+          </div>
+          <div class="my-3 pt-3 ms-5">
+            <img src="img/user.svg" alt="" /> User
+          </div>
+          <div class="mt-5 pt-5 ms-5">
+            <img src="img/log-out.svg" alt="" /> Log Out
+          </div>
         </div>
-      </aside>
-      <!--------------------------sidebar end------------------------------------------------>
-
-
-      <!---------------------------------history start------------------------------------->
-      <div class="main-transaction-history">
-        <div class="image">
-          <img src="img/Time Style.png" alt="">
-          <img class="left" src="img/connection.png" alt="">
+    <div class="row col-8  mt-3 ms-5">        
+        <div class="box-history">
+          <div class="title p-2">
+            <h4>Transfer Money</h4>
         </div>
-        <div class="back-way">
-          <img src="img/arrow-left.png" alt="">
-          <h3>Transfer</h3>
+        <div class="user">
+          <div class="samuel d-flex flex-row p-2 rounded-3">
+            <img class="me-2" src="img/samuel.svg" alt="" width="45">
+            <h6>Samuel Suhi</h6>
+            <p>+62 813-8492-9994</p>           
+          </div>
+          <div class="mt-2" style="color: #7a7886;">
+          Type the amount you want to transfer and then <br>
+            press continue to the next steps.</div> 
+          <div class="input pt-5">
+            <input type="number"  name="angka" placeholder="0.00">           
+          </div>
+          <div class="nominal">       
+          <h6>Rp120.000 Available</h6>
         </div>
-          <div class="box-history d-none d-md-block">
-            <h4>Transfer History</h4>
+          <div class="input2 ">
+            <img class="position-absolute" src="img/pen.svg" alt="">
+            <input type="text" name="notes" id="" placeholder="Add some notes">
           </div>
-          <div class="first-user">
-            <img src="img/gambar1.svg" alt="" width="50" height="50" />
-            <h5>Samuel Suhi</h5>
-            <span>
-            +62 813-8492-9994
-            </span>
+          <div class="Btn">
+            <button type="button" class="btn btn-primary mb-3 w-75 rounded-pill">Continue</button>
           </div>
-          <div class="text-desc pt-lg-4 d-none d-md-block">
-              <p>Type the amount you want to transfer and then
-                press continue to the next steps.</p>
-          </div>
-          <div class="input-nominal">
-              <input type="text" name="" id="" placeholder="0.00">
-          </div>
-          <div class="info-nominal">
-            <span>Rp120.000 Available</span>
-          </div>
-          <div class="notes">
-              <input type="text" name="" id="" placeholder="Add some notes">
-              <img src="img/pen.svg" alt="">
-          </div>
-          <div class="LoginBtn d-none d-md-block">
-          <button>Continue</button>
         </div>
-      </div>
-      <div id="footer">
-        <p>2020 Zwallet. All right reserved</p>
-        <span>+62 5637 8882 9901</span>
-        <p class="contact">contact@zwallet.com</p>
-      </div>
+        </div>
     </div>
+</div>
+<footer class="bg-color py-2 mt-3 d-flex justify-content-between text-light px-5 flex-row">
+    <div>2020 Zwallet. All right reserved.</div>
+    <div class="ps-5">+62 5637 8882 9901</div>
+    <div>contact@zwallet.com</div>
+</footer>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
